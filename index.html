@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript on steroids</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!--challenge 1-->
+<div class="container1">
+    <h1>Challenge 1: Age in days.</h1>
+
+    <div class="flex-box-container">
+        <div class="button-clickme">
+            <button type="button" class="btn btn-primary" onclick="clickMe()">Click me</button>
+        </div>
+
+        <div class="button-reset">
+            <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <div class="flex-box-container">
+        <div id="flex-box-index">
+
+        </div>
+    </div>
+</div>
+
+<!--challenge 2-->
+<div class="container2">
+    <h1>Challenge 2: Cat generator</h1>
+
+    <div class="flex-box-container" style="padding: 10px;">
+        <button type="button" class="btn btn-success" onclick="generateCat()">Click to Generate</button>
+    </div>
+
+    <div class="flex-box-container">
+        <div id="cat-generator">
+
+        </div>
+    </div>
+
+</div>
+
+<!--challenge 3-->
+<div class="container3">
+    <h1>Challenge 3: Stone paper scissor</h1>
+
+    <div class="flex-box-container-3" id="rps-id" style="padding: 10px;">
+        <img class="rps-img" id="rock" src="https://image.flaticon.com/icons/svg/408/408072.svg"
+             style="width: 15%;box-shadow: white" onclick="rpsGame(this)">
+        <img class="rps-img" id="paper" src="https://image.flaticon.com/icons/svg/2919/2919751.svg"
+             style="width: 15%;box-shadow: white" onclick="rpsGame(this)">
+        <img class="rps-img" id="scissors" src="https://image.flaticon.com/icons/svg/2919/2919687.svg"
+             style="width: 15%;box-shadow: white" onclick="rpsGame(this)">
+    </div>
+
+</div>
+
+<!--challenge 4-->
+<div class="container4">
+    <h1>Challenge 4: Change the button's color.</h1>
+
+    <div class="flex-box-container">
+        <form action="" style="padding: 20px;">
+            <select name="dropdown" id="background" onchange="changeButtonClr(this)">
+                <option value="random">Random</option>
+                <option value="red">red</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="reset">reset</option>
+            </select>
+        </form>
+
+        <div>
+            <button type="button" class="btn btn-primary">Bang on!</button>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-success">Yahoo!</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-warning">google</button>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-danger">Instagram</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script rel="script" src="static/js/rock-paper-scissor.js"></script>
+<script rel="script" src="static/js/cat-generator.js"></script>
+<script rel="script" src="static/js/age-in-days.js"></script>
+<script rel="script" src="static/js/change-btn-clr.js"></script>
+</body>
+</html>
