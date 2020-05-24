@@ -71,7 +71,6 @@
 *.scss text
 *.less text
 *.styl text
-*.js text
 *.coffee text
 *.json text
 *.htm text
